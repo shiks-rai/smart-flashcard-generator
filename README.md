@@ -1,15 +1,31 @@
-# 📚 Smart Flashcard Generator (AI)
+# 📚 Smart Flashcard Generator from PDF (Local Model)
 
-Upload your class notes PDF → get auto-generated question–answer flashcards to revise.
+A Python + Streamlit app that **automatically generates flashcards** from any syllabus or notes PDF, using a local LLM model (Mistral 7B).
 
-## ✅ Features
-- Upload PDF files (notes, slides, etc.)
-- Extract text and chunk into logical sections
-- Generate Q&A flashcards using AI (Flan‑T5)
-- Display flashcards in a clean web UI
-- Option to download flashcards
+✨ Built as a portfolio / resume project to show:
+- LangChain document loading & text splitting
+- Local LLM generation with [GPT4All](https://github.com/nomic-ai/gpt4all)
+- Clean Streamlit UI with flashcard cards
 
-## 🚀 How to run
+---
+
+## 🚀 Features
+✅ Upload your syllabus or notes as PDF  
+✅ Extracts text, splits into chunks  
+✅ Uses local language model to generate flashcard questions & answers  
+✅ Displays them in a clean, dark-themed interface
+
+Works **completely offline** (after downloading the model).
+
+---
+
+## 📦 Requirements
+
+Python 3.8+ and these Python packages:
+- streamlit
+- langchain
+- gpt4all
+
+Install with:
 ```bash
 pip install -r requirements.txt
-python -m streamlit run app.py
